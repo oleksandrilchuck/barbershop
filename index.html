@@ -4,8 +4,170 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Barbershop</title>
+
+    <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
-    
+    <header class="header">
+        <div class="container">
+            <div class="header__body">
+                <a href="#" class="header__logo">
+                    <img src="img/logo.png" alt="logo">
+                </a>
+                <div class="header__burger">
+                    <span></span>
+                </div>
+                <nav class="header__menu">
+                    <ul class="header__list">
+                        <li>
+                            <a href="#" class="header__link">Головна</a>
+                        </li>
+                        <li>
+                            <a href="#" class="header__link">Про нас</a>
+                        </li>
+                        <li>
+                            <a href="#" class="header__link">Майстри</a>
+                        </li>
+                        <li>
+                            <a href="#" class="header__link">Відгуки</a>
+                        </li>
+                        <li>
+                            <a href="#" class="header__link">Ціни</a>
+                        </li>
+                        <li>
+                            <a href="#" class="header__link">Контанти</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <section class="hero">
+        <div class="container">
+            <h2 class="hero__title">Men`s club barbershop</h2>
+            <h1 class="hero__text">Чоловіча перукарня</h1>
+            <div class="hero__sale">
+                <p class="hero__sale-text">Вперше у нас?<br> лови знижку 30%</p>
+                <img src="/icons/arrow.png" alt="arrow" class="hero__sale-img">
+                <a href="#" class="hero__sale-btn">Забрати знижку</a>
+            </div>
+        </div>
+    </section>
+    <section class="about">
+        <div class="container">
+            <h2 class="about__title">Про нас:</h2>
+            <div class="about__inner">
+                <p class="about__inner-text">
+                    Ми - команда професіоналів, <br>
+                    які працюємо в сфері чоловічої краси<br>
+                    з 2012 року.<br>
+                    За цей час ми досягли високого рівня <br>
+                    в цій галузі.<br>
+                    Всі наші барбери - професіонали своєї<br>
+                    справи з багаторічним досвідом.<br>
+                    Ми підібрали найкращі рішення, які <br>
+                    випробувані часом. А їхня ефективність <br>
+                    та надійність доведена сотнями <br>
+                    задоволених клієнтів.
+                </p>
+                <img src="/img/logo-about.png" alt="logo-about" class="about__inner-img">
+            </div>
+        </div>
+    </section>
+    <section class="features">
+        <div class="container">
+            <div class="features__inner">
+                <div class="features__card">
+                    <img src="/img/feature1.png" alt="profi" class="features__card-img">
+                    <h3 class="features__card-title">Профі</h3>
+                    <p class="features__card-text">Окрім досвіду кожен барбер проходить регулярне навчання як в Україні так і за її межами</p>
+                </div>
+                <div class="features__card">
+                    <img src="/img/feature2.png" alt="instruments" class="features__card-img">
+                    <h3 class="features__card-title">Професійні засоби</h3>
+                    <p class="features__card-text">Ми використовуємо сучасні інструменти та засоби провідних європейських та американських виробників</p>
+                </div>
+                <div class="features__card">
+                    <img src="/img/feature3.png" alt="place" class="features__card-img">
+                    <h3 class="features__card-title">Місце</h3>
+                    <p class="features__card-text">До нас зручно дістатись Ми розташовані в районі зі зручною транспортною розв’язкою. </p>
+                </div>
+                <div class="features__card">
+                    <img src="/img/feature4.png" alt="coffe" class="features__card-img">
+                    <h3 class="features__card-title">Кава, чай</h3>
+                    <p class="features__card-text">Кожен наш клієнт, за бажанням пригощається безкоштовно кавою, також безкоштовний WIFI.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="video">
+        <div class="container">
+            <div class="video__inner">
+                <div class="video__inner-text">
+                    <p>Досвідчені майстри, <br>
+                        надсучасні технології,
+                        найкращі тренди
+                    </p>
+                    <h2>Коротке відео про нас:</h2>
+                </div>
+                <div class="video__inner-video">
+                    <div id="video">
+                        <div class="video-control" id="video-play"></div>
+                        <div class="video-control" id="video-over"></div>
+                        <video preload="auto" id="myVideo" poster="img/hero-bg.jpg">
+                            <source id="mp4" src="video/vid.mp4" type="video/mp4" />
+                            <source id="webm" src="video/vid.webm" type="video/webm" />
+                            <source id="ogv" src="video/vid.ogv" type="video/ogg" />
+                        </video>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="team">
+        <div class="container">
+            <h2 class="team__title">Наші майстри:</h2>
+            <div class="team__slider">
+                <div class="team__slider-card">
+                    <div class="slider-img">
+                        <img src="/img/burber1.jpg" alt="">
+                    </div>
+                    <div class="slider-text">
+                        <h3>Орест</h3>
+                        <p>5 років досвіду</p>
+                    </div>
+                    <div class="team-btn">
+                        <a href="#" class="card-btn">Записатись</a>
+                    </div>
+                </div>
+                <div class="team__slider-card">
+                    <div class="slider-img">
+                        <img src="/img/burber2.jpg" alt="">
+                    </div>
+                    <div class="slider-text">
+                        <h3>Володимир</h3>
+                        <p>3 роки досвіду</p>
+                    </div>
+                    <div class="team-btn">
+                        <a href="#" class="card-btn">Записатись</a>
+                    </div>
+                </div>
+                <div class="team__slider-card">
+                    <div class="slider-img">
+                        <img src="/img/burber3.jpg" alt="">
+                    </div>
+                    <div class="slider-text">
+                        <h3>Любомир</h3>
+                        <p>4 роки досвіду</p>
+                    </div>
+                    <div class="team-btn">
+                        <a href="#" class="card-btn">Записатись</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>

@@ -1,0 +1,211 @@
+//header
+@media (max-width: 840px){
+    // header
+    body.lock{
+        overflow: hidden;
+    }
+    .header__body {
+        height: 80px;
+    }
+    .header__logo{
+        flex: 0 0 71px;
+    }
+    .header__burger {
+        display: block;
+        position: relative;
+        width: 30px;
+        height: 20px;
+        z-index: 3;
+    }
+    .header__burger span {
+        position: absolute;
+        background-color: #fff;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        top: 9px;
+        transition: all 0.3s ease 0s;
+    }
+    .header__burger:before,
+    .header__burger:after{
+        content: '';
+        background-color: #fff;
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        left: 0;
+        transition: all 0.3s ease 0s;
+    }
+    .header__burger::before{
+        top: 0;
+    }
+    .header__burger::after{
+        bottom: 0;
+    }
+    .header__burger.active span{
+        transform: scale(0);
+    }
+    .header__burger.active::before{
+        transform: rotate(45deg);
+        top: 9px;
+    }
+    .header__burger.active::after{
+        transform: rotate(-45deg);
+        bottom: 9px;
+    }
+    .header__menu {
+        position: fixed;
+        top: -100%;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background-color: $color-black;
+        padding: 70px 10px 20px 10px;
+        transition: all 0.3s ease 0s;
+    }
+    .header__menu.active{
+        top: 0;
+    }
+    .header__list{
+        margin-top: 56px;
+        margin-left: 32px;
+        display: block;
+    }
+    .header__list li{
+        margin: 0px 0px 22px 0px;
+    }
+    .header__link{
+        font-size: $m-nav-text;
+    }
+}
+//hero
+@media (max-width: 840px){
+//hero
+   .hero {
+    //    max-height: 100vh;
+    //    overflow: auto;
+   }
+   .hero__title {
+       font-size: $m-hero-bold;
+       padding-top: 116px;
+   }
+   .hero__text {
+       max-width: 192px;
+       font-size: $m-hero-h1;
+       text-align: center;
+       margin: 58px auto 0;   
+   }
+   .hero__sale {
+       margin: 58px auto 0;
+       flex-direction: column;
+       padding-bottom: 44px;
+   }
+   .hero__sale-text {
+       font-size: $m-hero-text;
+       text-align: center;
+       margin-bottom: 28px;
+   }
+   .hero__sale-img {
+       display: none;
+   }
+   .hero__sale-btn {
+       max-width: 250px;
+       padding: 12px 40px;
+       font-size: $m-btn-text;
+       text-transform: uppercase;
+       margin: 28px auto 0;
+       margin-bottom: 44px;
+       text-align: center;
+   }
+}
+//about
+@media (max-width: 840px){
+    //about
+   .about__title {
+       padding-top: $m-pt;
+   }
+   .about__inner {
+       margin-top: 40px;
+       padding-bottom: $m-pb;
+   }
+   .about__inner-text {
+       margin: 0 auto;
+   }
+   .about__inner-img {
+       display: none;
+   }
+}
+@media (max-width: 550px){
+   .about__title{
+       font-size: $m-body-h2;
+   }
+  
+   .about__inner-text{
+    font-size: $m-body-text;
+   }
+}
+//features
+@media (max-width: 840px){
+   //features
+   .features {
+       padding-top: $m-pt;
+   }
+   .features__inner {
+       padding-bottom: $m-pb;
+   }
+   .features__card-title {
+       font-size: $m-card-h1;
+   }
+   .features__card-text {
+       font-size: $m-card-text;
+   }
+}
+@media (max-width: 550px){
+    .features__card{
+        border: none;
+        position: relative;
+    }
+    .features__card::after{
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 56px;
+        text-align: center;
+        width: 150px;
+        height: 2px;
+        background-color: $color-white; 
+    }
+}
+//video
+@media (max-width: 840px){
+    .video__inner{
+        flex-direction: column;
+        margin: 0 auto;
+    }
+    .video__inner-text{
+        text-align: center;
+        margin: 0 auto;
+        font-size: $m-body-h2;
+    }
+    .video__inner-text h2{
+        margin-top: 50px;
+        font-size: $m-body-h2;
+    }
+    .video__inner-video{
+        margin: 0 auto;
+        padding-top: 70px;
+    }
+}
+@media (max-width: 550px){
+    .video{
+        display: none;
+    }
+}
+//team
+@media (max-width: 840px){
+
+}
+@media (max-width: 550px){
+    
+}

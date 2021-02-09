@@ -1,0 +1,334 @@
+@import "null";
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@700&family=Merriweather:wght@400;700&display=swap');
+@import "vendor";
+@import "global";
+// header
+.header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 50;
+}
+.header::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    // background-color: aqua;
+    background: linear-gradient(180deg, #0C1024 40.63%, rgba(12, 16, 36, 0) 100%);
+    z-index: 2;
+}
+.header__body {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    height: 120px;
+    align-items: center;
+}
+.header__logo {
+    flex: 0 0 120px;
+    border-radius: 50%;
+    overflow: hidden;
+    position: relative;
+    z-index: 3;
+}
+.header__logo img{
+    max-width: 100%;
+    display: block;
+}
+.header__burger {
+    display: none;
+}
+.header__menu {
+}
+.header__list {
+    display: flex;
+    position: relative;
+    z-index: 2;
+}
+.header__list li {
+    list-style: none;
+    margin: 0px 0px 0px 20px;
+}
+.header__link {
+    text-transform: uppercase;
+    color: $color-white;
+    font-size: $nav-text;
+    text-decoration: none;
+    transition: all .5s;
+}
+.header__link:hover{
+    color: $color-red;
+}
+// hero
+.hero {
+    max-height: 790px;
+    // min-height: 790px;
+    // height: 100%;
+    width: 100%;
+    background: url(../img/hero-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.hero__title {
+    font-family: $font-body;
+    font-weight: $fwb;
+    font-size: $hero-bold;
+    line-height: 120%;
+    padding-top: 258px;
+    text-align: center;
+}
+.hero__text {
+    font-family: $font-h;
+    font-size: $hero-h1;
+    font-weight: $fwb;
+    color: $color-white;
+    text-align: center;
+    margin-top: 22px;   
+}
+.hero__sale {
+    max-width: 975px;
+    padding-bottom: 100px;
+    margin: 203px auto 0;
+    display: flex;
+    justify-content: space-between;
+}
+.hero__sale-text {
+    font-family: $font-h;
+    font-size: $hero-text;
+    color: $color-yellow;
+    text-transform: uppercase;
+}
+.hero__sale-img {
+    max-height: 30px;
+}
+.hero__sale-btn {
+    padding: 18px 57px;
+    font-family: $font-h;
+    font-size: $btn-text;
+    color: $color-white;
+    text-transform: uppercase;
+    border: 4px solid $color-yellow;
+    border-radius: 61px;
+}
+//about
+.about {
+    background-color: $color-black;
+}
+.about__title {
+    font-size: $body-h2;
+    font-weight: $fwb;
+    line-height: 120%;
+    text-align: center;
+    padding-top: $pt;
+}
+.about__inner {
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 80px;
+    max-width: 1009px;
+    padding-bottom: $pb;
+}
+.about__inner-text {
+    font-size: $body-text;
+    font-weight: $fwr;
+    letter-spacing: 5%;
+    max-width: 539px;
+    max-height: 365px;
+    margin: auto 0;
+}
+.about__inner-img {
+    max-width: 389px;
+    max-height: 389px;
+}
+//features
+.features {
+    background-color: $color-black;
+    padding-top: $pt;
+}
+.features__inner {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-bottom: $pb;
+}
+.features__card {
+    width: 263px;
+    height: 407px;
+    border: 1px solid $color-white;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 30px;
+}
+.features__card-img {
+    width: 127px;
+    height: 127px;
+    margin: 0 auto;
+}
+.features__card-title {
+    font-family: $font-h;
+    font-weight: $fwb;
+    font-size: $card-h1;
+    max-width: 202px;
+    margin: 0  auto;
+}
+.features__card-text {
+    width: 202px;
+    height: 124px;
+    margin: 0 auto;
+    font-family: $font-body;
+    font-size: $card-text;
+    font-weight: $fwb;
+}
+//video
+.video{
+    background-color: $color-black;
+}
+#video {
+    max-width: 570px;
+    width: 100%;
+    position: relative;
+}
+#video-over {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    display: none;
+}
+#video-play {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    width: 60px;
+    height: 60px;
+    background: url('/img/video-button.svg');
+    z-index: 1;
+    cursor: pointer;
+    transition: 0.2s ease;
+    transition-property: opacity, visibility;
+}
+#video-play:hover::before {
+    transform: scale(1.2);
+}
+ #video video {
+    width: 100%;
+    display: block;
+    border-radius: 15px;
+}
+#video.video-is-playing #video-over {
+    display: block;
+}
+#video.video-is-playing #video-play {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.video__inner {
+    display: flex;
+    justify-content: space-between;
+    padding-top: $pt;
+    padding-bottom: $pb;
+}
+.video__inner-text {
+    font-family: $font-body;
+    line-height: 120%;
+    font-size: $body-h2;
+    font-weight: $fwb;
+    margin: auto 0;
+    max-width: 437px;
+}
+.video__inner-text h2{
+    font-family: $font-body;
+    font-weight: $fwb;
+    font-size: $body-h3;
+    color: $color-white;
+    margin-top: 127px;
+}
+.video__inner-video {
+    max-width: 570px;
+    max-height: 485px;   
+}
+//team
+.team {
+    background-color: $color-black;
+}
+.team__title {
+    padding-top: $pt;
+    padding-bottom: 81px;
+    margin: 0 auto;
+    text-align: center;
+    font-family: $font-h;
+    font-size: $body-h2;
+    font-weight: $fwb;
+}
+.team__slider {
+    padding-bottom: $pb;
+    margin: 0 auto;
+    max-width: 1140px;
+}
+.team__slider-card {
+    margin: 0 auto;
+    max-width: 360px;
+    height: 602px;
+    border: 1px solid $color-red;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+.slider-img{
+    border-radius: 10px;
+    max-width: 360px;
+    max-height: 405px;  
+}
+.team__slider-card img {
+    width: 100%;
+    height: 100%;
+}
+.slider-text {
+    padding-left: 21px;
+}
+.slider-text h3 {
+    font-family: $font-h;
+    font-size: $card-h1;
+    font-weight: $fwb;
+    padding-top: 25px;
+}
+.slider-text p {
+    padding-top: 15px;
+    font-family: $font-body;
+    font-size: $card-text;
+    font-weight: $fwb;
+}
+.team-btn{
+    text-align: center;
+    padding-top: 59px;
+}
+.card-btn {
+    padding: 13px 49px;
+    max-width: 215px;
+    max-height: 54px;
+    border: 4px solid $color-yellow;
+    border-radius: 55px;
+    font-family: $font-h;
+    font-size: $card-btn;
+    color: $color-white;
+}
+
+
+
+@import "mobile";
+

@@ -106,6 +106,9 @@
 .hero__sale-img {
     max-height: 30px;
 }
+.hero-button{
+    padding: 17px 57px;
+}
 .hero__sale-btn {
     padding: 18px 57px;
     font-family: $font-h;
@@ -322,23 +325,17 @@
     font-weight: $fwb;
 }
 .team-btn{
-    text-align: center;
     padding-top: 45px;
 }
-.card-btn {
-    padding: 11px 49px 15px 49px;
+.team-button{
+    padding: 11px 34px 15px 34px;
     max-width: 215px;
     max-height: 54px;
-    border: 4px solid $color-yellow;
     border-radius: 55px;
-    font-family: $font-h;
     font-size: $card-btn;
-    color: $color-white;
-    background-color: transparent;
-    text-align: center;
+    letter-spacing: 0;
 }
 //slider
-
 .slick-list {
     overflow: hidden;
 }
@@ -373,9 +370,6 @@
 .team__slider-card {
     opacity: 0.4;
     transform: scale(0.85);
-}
-.team__slider.slick-slide{
-    
 }
 .team__slider-card.slick-center{
     opacity: 1;
@@ -473,6 +467,204 @@
     background-color: transparent;
     border: 1px solid $color-white;
 }
+//prices
+.prices {
+    background-color: $color-black;
+}  
+.prices__title {
+    font-family: $font-h;
+    font-size: $body-h2;
+    font-weight: $fwb;
+    text-align: center;
+    padding-top: $pt;
+}
+.prices__block {
+    max-width: 840px;
+    margin: 0 auto;
+    padding-top: 81px;
+}
+.prices__text {
+    font-family: $font-body;
+    font-size: $body-text;
+    font-weight: $fwr;
+    text-align: center;
+    margin-top: 61px;
+}
+.button-wrapper{
+    display: flex;
+    justify-content: center;
+    margin-top: 61px;
+    padding-bottom: $pb;
+}
+.prices__btn {
+    background-color: transparent;
+    padding: 17px 85px;
+    border: 4px solid $color-yellow;
+    border-radius: 60px;
+    font-family: $font-h;
+    font-size: $btn-text;
+    color: $color-white;
+    line-height: 120%;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+.prices__list {
+    padding: 0;
+} 
+.is-no-margin {
+    margin: 0;
+}  
+.dot-leader {
+    margin-top: 37px;
+    position: relative;
+    overflow: hidden; /* clip the dots */
+}
+.dot-leader:first-child{
+    margin-top: 0;
+}
+.dot-leader__left,
+.dot-leader__right{
+    font-family: $font-body;
+    font-size: $body-text;
+    font-weight: $fwr;
+}
+.dot-leader__left {
+    position: relative;
+    display: inline-block;
+} 
+.dot-leader__left::after {
+    box-sizing: border-box;
+    font-family: sans-serif;
+    color: $color-white;
+    content: ". . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .";
+    font-weight: normal;
+    display: inline-block;
+    position: absolute;
+    white-space: nowrap; /* only needed when content has spaces */
+     margin-left: 5px; /* space left of dots */
+} 
+.dot-leader__right {
+    background: $color-black; /* cover the dots */
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    padding-left: 5px; /* space right of dots */
+}
+//map
+.map {
+    background-color: $color-black;
+}
+.map__title{
+    font-family: $font-h;
+    font-size: $body-h2;
+    font-weight: $fwb;
+    text-align: center;
+    padding-top: $pt;
+    padding-bottom: 81px;
+}
+.map__inner {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: $pb;
+}
+.map__text-title {
+    font-family: $font-h;
+    font-size: $body-h2;
+    font-weight: $fwb; 
+    color: $color-white;
+    padding-top: 91px;
+}
+.map__text-list {
+    padding-top: 35px;
+}
+.map__text-list p{
+    font-family: $font-body;
+    font-style: $body-text;
+    font-weight: $fwr;
+    letter-spacing: 1px;
+    padding-top: 10px;
+
+}
+.map__mapframe {
+    max-width: 560px;
+    width: 100%;
+    height: 452px;  
+    border-radius: 10px;
+    overflow: hidden;
+}
+.map__mapframe iframe{
+    width: 100%;
+    height: 100%;
+}
+//footer
+.footer {
+    background-color: $color-black;
+}
+.footer__container {
+    padding-top: $pt;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.footer__text {
+    font-family: $font-body;
+    font-size: $body-text;
+    align-self: center;
+}
+.footer__social {
+    display: flex;
+    justify-content: space-between;
+    width: 433px;
+} 
+.social__item {
+    width: 80px;
+    height: 80px;    
+    background-size: 80px 80px;
+    background-position: center;
+    position: relative;
+}
+.link-image {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+}
+.social__item-tw{
+    background-image: url("../icons/tvi.svg");
+}
+.social__item-fb{
+    background-image: url("../icons/fb.svg");
+}
+.social__item-tk{
+    background-image: url("../icons/tik-tok.svg");
+}
+.social__item-ins{
+    background-image: url("../icons/inst.svg");
+}
+.social__item-tw:hover{
+    background-image: url("../icons/tvi-red.svg");
+}
+.social__item-fb:hover{
+    background-image: url("../icons/fb-red.svg");
+}
+.social__item-tk:hover{
+    background-image: url("../icons/tik-tok-red.svg");
+}
+.social__item-ins:hover{
+    background-image: url("../icons/inst-red.svg");
+}
+.copywright {
+    text-align: center;
+    padding-top: 35px;
+    padding-bottom: 50px;
+    font-family: $font-body;
+    font-size: 12px;
+    line-height: 14px;
+    cursor: pointer;
+}
+.copywright__link {
+    color: $color-red;  
+} 
 
 @import "mobile";
 

@@ -5,7 +5,8 @@ $(document).ready(function() {
     });
 
 	$('.header__link').click(function(event) {
-        $('.header__burger, .header__menu').removeClass('active');
+        $('.header__burger, .header__menu').toggleClass('active');
+		$('body').toggleClass('lock');
     });
 
 	$('.team__slider').slick({

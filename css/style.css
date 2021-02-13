@@ -205,7 +205,8 @@ body {
 .hero {
   max-height: 790px;
   width: 100%;
-  background: url(../img/hero-bg.jpg);
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(12, 16, 36, 0.7)), to(rgba(12, 16, 36, 0.7))), url(../img/hero_section.jpg);
+  background: linear-gradient(0deg, rgba(12, 16, 36, 0.7), rgba(12, 16, 36, 0.7)), url(../img/hero_section.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -294,7 +295,7 @@ body {
 .about__inner-text {
   font-size: 24px;
   font-weight: 400;
-  letter-spacing: 5%;
+  letter-spacing: 1px;
   max-width: 539px;
   max-height: 365px;
   margin: auto 0;
@@ -852,7 +853,7 @@ body {
 
 .map__text-list p {
   font-family: "Merriweather", serif;
-  font-style: 24px;
+  font-size: 24px;
   font-weight: 400;
   letter-spacing: 1px;
   padding-top: 10px;
@@ -1352,7 +1353,7 @@ body {
     padding-top: 20px;
   }
   .map__text-list p {
-    font-style: 14px;
+    font-size: 14px;
     letter-spacing: 1px;
     padding-top: 10px;
   }

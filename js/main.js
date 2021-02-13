@@ -4,6 +4,10 @@ $(document).ready(function() {
         $('body').toggleClass('lock');
     });
 
+	$('.header__link').click(function(event) {
+        $('.header__burger, .header__menu').removeClass('active');
+    });
+
 	$('.team__slider').slick({
 		arrows: false,
 		dots: true,
@@ -45,6 +49,15 @@ $(document).ready(function() {
 
 
 	});
+
+	$('a[href^="#"], *[data-href^="#"]').on('click', function(e){
+        e.preventDefault();
+        var t = 1000;
+        var d = $(this).attr('data-href') ? $(this).attr('data-href') : $(this).attr('href');
+        $('html,body').stop().animate({ scrollTop: $(d).offset().top - 50 }, t);
+    });	  	
+
+		  
 });
 
 $(function () {
